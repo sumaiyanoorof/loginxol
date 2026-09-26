@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@keyframes marquee {
+  0% { transform: translateX(100%);}
+  100% { transform: translateX(-100%);}
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes techStackMove {
+  0% { transform: translateX(0) rotate(-2deg); }
+  100% { transform: translateX(-50%) rotate(-2deg); }
+}
+.animate-techstack-move {
+  animation: techStackMove 30s linear infinite;
+}
+
+.animate-logo-spin {
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: translateX(0deg); }
+  100% { transform: rotate(3deg); }
+}
+
+
+@keyframes bounce-up{
+        
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+   }
+
+
+@keyframes marquee {
+  0% { transform: translateX(100%);}
+  100% { transform: translateX(-100%);}
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes techStackMove {
+  0% { transform: translateX(0) rotate(-2deg); }
+  100% { transform: translateX(-50%) rotate(-2deg); }
+}
+.animate-techstack-move {
+  animation: techStackMove 30s linear infinite;
+}
+
+.animate-logo-spin {
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: translateX(0deg); }
+  100% { transform: rotate(3deg); }
+}
+
+@keyframes bounce-up{
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+@keyframes marquee {
+  0% { transform: translateX(100%);}
+  100% { transform: translateX(-100%);}
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes techStackMove {
+  0% { transform: translateX(0) rotate(-2deg); }
+  100% { transform: translateX(-50%) rotate(-2deg); }
+}
+.animate-techstack-move {
+  animation: techStackMove 30s linear infinite;
+}
+
+.animate-logo-spin {
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: translateX(0deg); }
+  100% { transform: rotate(3deg); }
+}
+
+@keyframes bounce-up{
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.animate-bounce-up{
+        animation: bounce-up 3s ease-in-out infinite;
+      }
+
+@keyframes move-left{
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+   }
+.animate-move-left {
+  animation: move-left 1000s linear infinite;
+}      
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* Removed all @apply usage for Tailwind v4 compatibility. Use Tailwind classes directly in JSX. */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cccdce;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d41424;
+  border-radius: 6px;
+  border: 1px solid #252424;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Hide native scrollbars for horizontal carousels while preserving scrolling */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* ensure snap-start utility exists in case Tailwind config doesn't include it */
+.snap-start {
+  scroll-snap-align: start;
+}
